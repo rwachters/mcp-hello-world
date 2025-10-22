@@ -1,0 +1,14 @@
+[versions]
+kotlin = "2.2.20"
+mcpKotlinSdk = "0.7.3"
+kotlinxCoroutines = "1.10.2"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+mcp-kotlin-sdk = { module = "io.modelcontextprotocol:kotlin-sdk", version.ref = "mcpKotlinSdk" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+
+[plugins]
+# Define the Kotlin JVM plugin, referencing its version from [versions]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
